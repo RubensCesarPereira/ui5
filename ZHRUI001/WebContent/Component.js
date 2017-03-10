@@ -1,23 +1,29 @@
-jQuery.sap.declare("sap.ui.comp.sample.valuehelpdialog.example1.Component");
+sap.ui.define(['sap/ui/core/UIComponent'],
+	function(UIComponent) {
+	"use strict";
 
-sap.ui.core.UIComponent.extend("sap.ui.comp.sample.valuehelpdialog.example1.Component", {
+	var Component = UIComponent.extend("sap.m.sample.InputStates.Component", {
 
-	metadata : {
-		rootView : "sap.ui.comp.sample.valuehelpdialog.example1.ValueHelpDialog",
-		dependencies : {
-			libs : [
-				"sap.m",
-				"sap.ui.comp"
-			]
-		},
-		config : {
-			sample : {
-				stretch : true,
-				files : [
-					"ValueHelpDialog.view.xml",
-					"ValueHelpDialog.controller.js"
+		metadata : {
+			rootView : "sap.m.sample.InputStates.V",
+			dependencies : {
+				libs : [
+					"sap.m",
+					"sap.ui.layout"
 				]
+			},
+			config : {
+				sample : {
+					files : [
+						"V.view.xml",
+						"C.controller.js",
+						"Dialog.fragment.xml"
+					]
+				}
 			}
 		}
-	}
+	});
+
+	return Component;
+
 });
