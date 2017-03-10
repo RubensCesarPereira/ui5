@@ -1,0 +1,30 @@
+<mvc:View
+	height="100%" 
+	controllerName="sap.m.sample.InputStates.C"
+	xmlns:mvc="sap.ui.core.mvc"
+xmlns:l="sap.ui.layout"
+xmlns:f="sap.ui.layout.form" 
+xmlns:m="sap.m" 
+xmlns:c="sap.ui.core" 
+xmlns="sap.ui.comp.variants">
+<l:Grid defaultSpan="L12 M7 S12" width="auto">
+		<l:content>
+			<f:SimpleForm id="SimpleFormChange354" minWidth="1024" maxContainerCols="2" layout="ResponsiveLayout" editable="true" visible="true">
+				<f:content>
+					<m:Label text="Login de"  labelFor="multiInput"/>
+					<m:MultiInput id="multiInput" valueHelpRequest="valueHelpRequest"  required="true" width="40%"/>
+				
+					<m:Label text="Para"/>
+					<m:MultiInput id="loginPara" valueHelpRequest="valueHelpRequest" required="true" width="40%"/>
+				
+					<m:Label text="Data de"/>
+					<m:DatePicker dateValue="" placeholder="Insira a data" id="datade" required="true" width="40%"/>
+					<m:Label text="Data até"/>
+					<m:DatePicker dateValue="" placeholder="Insira a data" id="datapara" required="true" width="40%" />
+					<m:Label/>				
+					<m:Button type="Accept" press="submit" text="Confirmar" width="15%" />
+				</f:content>
+			</f:SimpleForm>
+		</l:content>
+	</l:Grid>
+</mvc:View>
